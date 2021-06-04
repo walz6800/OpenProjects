@@ -1,0 +1,64 @@
+\t (00:00:07) allegro 16.5 P003 (v16-5-13C) i86
+\t (00:00:07)     Journal start - Fri Jun 05 16:08:26 2015
+\t (00:00:07)         Host=PCZYANG User=A Pid=7460 CPUs=4
+\t (00:00:07) 
+\t (00:00:08) Opening existing design...
+\e (00:00:08) ERROR(SPMHOD-29): Unable to open design because database was saved under a newer release and contains features not compatible with this version of software. See the newer release's documentation for any conversion capability.
+\e (00:00:08) ERROR(SPMHOD-29): Unable to open design because database was saved under a newer release and contains features not compatible with this version of software. See the newer release's documentation for any conversion capability.
+\i (00:00:09) fillin confirm
+\t (00:00:09) Starting new design...
+\i (00:00:10) trapsize 635
+\i (00:00:10) trapsize 624
+\i (00:00:10) trapsize 637
+\i (00:00:11) trapsize 1049
+\i (00:00:12) generaledit 
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 18909.9 7807.4
+\i (00:00:13) trapsize 1049
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 18909.9 7807.4
+\i (00:00:13) trapsize 1049
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 18909.9 7807.4
+\i (00:00:13) trapsize 1049
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 18909.9 7807.4
+\i (00:00:13) trapsize 1049
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 18909.9 7807.4
+\i (00:00:13) trapsize 1049
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 18909.9 7807.4
+\i (00:00:14) trapsize 525
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 13150.6 7807.4
+\i (00:00:14) trapsize 262
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 13150.7 7807.5
+\i (00:00:14) trapsize 131
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 13150.7 7807.5
+\i (00:00:14) trapsize 66
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 13150.7 7807.6
+\i (00:00:14) trapsize 131
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 13150.8 7807.5
+\i (00:00:14) trapsize 262
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 13150.9 7807.6
+\i (00:00:14) trapsize 525
+\i (00:00:15) exit 
+\t (00:00:16)     Journal end - Fri Jun 05 16:08:35 2015

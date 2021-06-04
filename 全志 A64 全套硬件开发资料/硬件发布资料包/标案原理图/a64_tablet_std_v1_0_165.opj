@@ -1,0 +1,226 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\a64_tablet_std_v1_0_165.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\a64_tablet_std_v1_0_165.dsn")
+      (Path "Design Resources" ".\a64_tablet_std_v1_0_165.dsn"
+         "A64-TABLET-REFERENCE-DESIGN")
+      (Path "Design Resources" ".\a64_tablet_std_v1_0_165.dsn" "Option")
+      (Select "Design Resources" ".\a64_tablet_std_v1_0_165.dsn"
+         "A64-TABLET-REFERENCE-DESIGN" "06 PMIC"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 279 0 901"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 564")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "01 VERSION HISTORY"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1766 130 590")
+        (Scroll "0 130")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "02 BLOCK DIAGRAM"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1792 156 616")
+        (Scroll "0 130")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "03 POWER TREE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1818 182 642")
+        (Scroll "-323 0")
+        (Zoom "57")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "04 DDR3 16X2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1844 208 668")
+        (Scroll "0 662")
+        (Zoom "114")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "05 CPU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 1388 0 469")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "06 PMIC"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1414 26 495")
+        (Scroll "284 464")
+        (Zoom "114")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "07 FLASH"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1440 52 521")
+        (Scroll "0 10")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "08 AUDIO"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1466 78 547")
+        (Scroll "0 488")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "09 USB/T-CARD"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1492 104 573")
+        (Scroll "0 290")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "10 CAMREA"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1518 130 599")
+        (Scroll "284 0")
+        (Zoom "114")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "11 LCM/CTP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1544 156 625")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "12 SENSORs/MT/KEY"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1570 182 651")
+        (Scroll "0 120")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "13 HDMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1596 208 677")
+        (Scroll "0 320")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "14 WIFI+BT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 234 1622 234 703")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "A64-TABLET-REFERENCE-DESIGN")
+      (Page "15 MODEM-2G"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1388 0 469")
+        (Scroll "0 498")
+        (Zoom "100"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "Option")
+      (Page "16 LPDDR3 FBGA178"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 1414 26 495")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "Option")
+      (Page "17 LPDDR3/LPDDR2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1440 52 521")
+        (Scroll "62 498")
+        (Zoom "100"))
+      (Path
+         "E:\02_TECHNICALDATA\全志A64\全志 A64 全套硬件开发资料\硬件发布资料包\标案原理图\A64_TABLET_STD_V1_0_165.DSN")
+      (Schematic "Option")
+      (Page "18 MODEM-3G")))
+  (MPSSessionName "Administrator"))

@@ -1,0 +1,41 @@
+\t (00:00:04) allegro 16.5 P003 (v16-5-13C) i86
+\t (00:00:04)     Journal start - Fri Jun 05 16:08:42 2015
+\t (00:00:04)         Host=PCZYANG User=A Pid=9508 CPUs=4
+\t (00:00:04) 
+\t (00:00:06) Opening existing design...
+\i (00:00:07) fillin yes 
+\w (00:00:07) WARNING(SPMHDB-214): Allegro PCB Design XL (legacy) opening an Allegro GXL design.
+\w (00:00:07) WARNING(SPMHDB-213): DRC set to "out of date". This product supports a different DRC set than last product used on drawing.
+\w (00:00:07) WARNING(SPMHOD-33): Design was last saved by a higher capability product (Allegro GXL). There may be constraints and other design data that may be ignored at the tool's current license levels.
+\i (00:00:08) fillin confirm
+\d (00:00:08) Database opened: E:/PCB&SCH/A64/A64_065_REF_DDR3_16X2_V1_0/A64_0_65_REF_DDR3_16X2_V1_0_20150421-VER163.brd
+\i (00:00:08) trapsize 54677
+\i (00:00:08) trapsize 53702
+\i (00:00:08) trapsize 54842
+\i (00:00:09) trapsize 60613
+\i (00:00:10) generaledit 
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 3665.5879 2215.8473
+\i (00:00:10) trapsize 121226
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 3665.5879 2215.8472
+\i (00:00:10) trapsize 242453
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 3238.8706 2817.1307
+\i (00:00:11) trapsize 121226
+\i (00:00:12) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in 3275.2386 2320.1021
+\i (00:00:12) trapsize 60613
+\i (00:00:14) setwindow form.vf_vis
+\i (00:00:14) FORM vf_vis 1 all_colorvisible YES 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 3240.0830 2484.9701
+\i (00:00:14) trapsize 121226
+\i (00:00:16) exit 
+\t (00:00:17)     Journal end - Fri Jun 05 16:08:56 2015
