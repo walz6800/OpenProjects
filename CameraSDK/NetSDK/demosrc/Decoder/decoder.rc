@@ -1,0 +1,283 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\decoder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\decoder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DECODER_DIALOG DIALOGEX 0, 0, 320, 352
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "decoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "开始解码",ID_BTN_START,88,184,50,14
+    PUSHBUTTON      "停止解码",ID_BNT_STOP,167,184,50,14
+    LTEXT           "解码器地址",IDC_STATIC,28,19,38,8
+    EDITTEXT        IDC_EDIT_DECODER_IP,71,17,62,14,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC,161,19,16,8
+    EDITTEXT        IDC_EDIT_DECODER_PORT,181,16,59,14,ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,43,37,23,8
+    EDITTEXT        IDC_EDIT_DECODER_USER,71,35,62,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,161,37,16,8
+    EDITTEXT        IDC_EDIT_DECODER_PWD,181,35,62,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "解码器",IDC_STATIC,7,6,306,79
+    PUSHBUTTON      "登录",IDC_BTN_LOGIN,82,59,50,14
+    PUSHBUTTON      "登出",IDC_BTN_LOGOUT,159,58,50,14
+    GROUPBOX        "编码器",IDC_STATIC,7,92,306,112
+    LTEXT           "编码器",IDC_STATIC,30,123,38,8
+    EDITTEXT        IDC_EDIT_ENCODER_IP,72,120,62,14,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC,161,122,16,8
+    EDITTEXT        IDC_EDIT_ENCODER_PORT,182,119,59,14,ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC,44,141,23,8
+    EDITTEXT        IDC_EDIT_ENDCODER_USER,72,138,62,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,161,140,16,8
+    EDITTEXT        IDC_EDIT_ENCODER_PWD,182,138,62,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "解码通道",IDC_STATIC,38,104,30,8
+    COMBOBOX        IDC_COMBO_DECODER,72,100,63,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "编码通道",IDC_STATIC,37,159,30,8
+    COMBOBOX        IDC_COMBO_ENCODER,72,157,63,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "左上",IDC_BUTTONLEFTUP,30,247,38,17
+    PUSHBUTTON      "左下",IDC_BUTTONLEFTDOWN,30,300,38,17
+    PUSHBUTTON      "下",IDC_BUTTONDOWN,81,300,38,17
+    PUSHBUTTON      "上",IDC_BUTTONUP,81,247,38,17
+    PUSHBUTTON      "右上",IDC_BUTTONRIGHTUP,132,247,38,17
+    PUSHBUTTON      "右下",IDC_BUTTONRIGHTDOWN,132,300,38,17
+    PUSHBUTTON      "右",IDC_BUTTONRIGHT,132,275,38,17
+    PUSHBUTTON      "左",IDC_BUTTONLEFT,30,275,38,17
+    LTEXT           "PTZ",IDC_STATIC,93,280,30,12
+    GROUPBOX        "云台控制",IDC_STATIC,6,213,306,112
+    PUSHBUTTON      "+",IDC_BUTTONTJLEFT,191,247,38,17
+    PUSHBUTTON      "+",IDC_BUTTONGQLETF,191,300,38,17
+    PUSHBUTTON      "+",IDC_BUTTON1JJLEFT,191,275,38,17
+    PUSHBUTTON      "-",IDC_BUTTONTJRIGHT,260,247,38,17
+    PUSHBUTTON      "-",IDC_BUTTONGQRIGHT,260,300,38,17
+    PUSHBUTTON      "-",IDC_BUTTONJJRIGHT,260,275,38,17
+    LTEXT           "变倍",IDC_STATIC,235,252,21,10
+    LTEXT           "聚焦",IDC_STATIC,235,278,21,10
+    LTEXT           "光圈",IDC_STATIC,235,303,21,10
+    LTEXT           "控制通道",IDC_STATIC,33,227,30,8
+    COMBOBOX        IDC_COMBO_PTZ,67,223,63,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DECODER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 345
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About decoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "decoder Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "decoder MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "decoder\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "decoder.EXE\0"
+            VALUE "ProductName", "decoder Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About decoder..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\decoder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

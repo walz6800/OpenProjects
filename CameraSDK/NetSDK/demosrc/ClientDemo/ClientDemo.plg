@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientDemo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ClientDemo.res" /d "NDEBUG" /d "_AFXDLL" "F:\code\XM Demo\English\demosrc\ClientDemo\ClientDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ClientDemo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\code\XM Demo\English\demosrc\ClientDemo\ClientDemo.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\ClientDemoDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\ColorButton.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\ColorDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\CruiseEdit.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\DeviceConfigDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\DeviceEdit.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\DeviceEditDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\DialogKeyBoard.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\DlgCoverFile.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\IPEdit.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\LocalPlayback.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\Markup.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\multilanguage.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\NetAlarmDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\PromptDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\PTZDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\RemotePlaybackDlg.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\TabPlayback.cpp"
+"F:\code\XM Demo\English\demosrc\ClientDemo\VideoWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ClientDemo.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\code\XM Demo\English\demosrc\ClientDemo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ClientDemo.pdb" /machine:I386 /out:"../bin-en/ClientDemo.exe" 
+".\Release\ClientDemo.obj"
+".\Release\ClientDemoDlg.obj"
+".\Release\ColorButton.obj"
+".\Release\ColorDlg.obj"
+".\Release\CruiseEdit.obj"
+".\Release\DeviceConfigDlg.obj"
+".\Release\DeviceEdit.obj"
+".\Release\DeviceEditDlg.obj"
+".\Release\DialogKeyBoard.obj"
+".\Release\DlgCoverFile.obj"
+".\Release\IPEdit.obj"
+".\Release\LocalPlayback.obj"
+".\Release\Markup.obj"
+".\Release\multilanguage.obj"
+".\Release\NetAlarmDlg.obj"
+".\Release\PromptDlg.obj"
+".\Release\PTZDlg.obj"
+".\Release\RemotePlaybackDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\TabPlayback.obj"
+".\Release\VideoWnd.obj"
+".\Release\ClientDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.199\LOCALS~1\Temp\RSP6E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientDemo.cpp
+ClientDemoDlg.cpp
+F:\code\XM Demo\English\demosrc\ClientDemo\ClientDemoDlg.cpp(697) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+ColorButton.cpp
+ColorDlg.cpp
+CruiseEdit.cpp
+DeviceConfigDlg.cpp
+DeviceEdit.cpp
+DeviceEditDlg.cpp
+DialogKeyBoard.cpp
+DlgCoverFile.cpp
+IPEdit.cpp
+LocalPlayback.cpp
+Markup.cpp
+multilanguage.cpp
+Note: MBCS build (not UTF-8)
+NetAlarmDlg.cpp
+PromptDlg.cpp
+PTZDlg.cpp
+RemotePlaybackDlg.cpp
+TabPlayback.cpp
+VideoWnd.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ClientDemo.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

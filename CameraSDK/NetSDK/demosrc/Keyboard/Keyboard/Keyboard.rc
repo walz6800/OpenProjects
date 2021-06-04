@@ -1,0 +1,279 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Keyboard.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Keyboard"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "Keyboard 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_KEYBOARD_DIALOG DIALOGEX 0, 0, 355, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Keyboard"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "Keyboard.IPAddress",IDC_STATIC,212,10,54,8
+    LTEXT           "Keyboard.PortNum",IDC_STATIC,212,27,49,8
+    LTEXT           "Keyboard.Username",IDC_STATIC,212,44,49,8
+    LTEXT           "Keyboard.Password",IDC_STATIC,212,61,49,8
+    EDITTEXT        IDC_EDIT1,270,6,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,270,23,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,270,40,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,270,57,78,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Keyboard.Login",IDC_BUTTON1,211,77,50,14
+    PUSHBUTTON      "Keyboard.Logout",IDC_BUTTON2,298,77,50,14
+    PUSHBUTTON      "0",ID_KEY_0,8,6,21,14
+    PUSHBUTTON      "1",ID_KEY_1,29,6,21,14
+    PUSHBUTTON      "2",ID_KEY_2,50,6,21,14
+    PUSHBUTTON      "3",ID_KEY_3,71,6,21,14
+    PUSHBUTTON      "4",ID_KEY_4,92,6,21,14
+    PUSHBUTTON      "5",ID_KEY_5,113,6,21,14
+    PUSHBUTTON      "6",ID_KEY_6,134,6,21,14
+    PUSHBUTTON      "7",ID_KEY_7,155,6,21,14
+    PUSHBUTTON      "8",ID_KEY_8,176,6,21,14
+    PUSHBUTTON      "9",ID_KEY_9,7,25,21,14
+    PUSHBUTTON      "10",ID_KEY_10,28,25,21,14
+    PUSHBUTTON      "11",ID_KEY_11,49,25,21,14
+    PUSHBUTTON      "12",ID_KEY_12,70,25,21,14
+    PUSHBUTTON      "13",ID_KEY_13,91,25,21,14
+    PUSHBUTTON      "14",ID_KEY_14,112,25,21,14
+    PUSHBUTTON      "15",ID_KEY_15,133,25,21,14
+    PUSHBUTTON      "16",ID_KEY_16,154,25,21,14
+    PUSHBUTTON      "-/--",ID_KEY_10PlUS,175,25,21,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,213,91,135,195
+    PUSHBUTTON      "Keyboard.Menu",IDC_KEY_MENU,7,45,37,14
+    PUSHBUTTON      "Keyboard.Func",IDC_KEY_FUNC,45,45,37,14
+    PUSHBUTTON      "Keyboard.Enter",IDC_KEY_ENTER,83,45,37,14
+    PUSHBUTTON      "Keyboard.Esc",IDC_KEY_ESC,121,45,37,14
+    PUSHBUTTON      "Shift",IDC_KEY_SHIFT,159,45,39,14
+    PUSHBUTTON      "Keyboard.Split",IDC_KEY_SPLIT,83,104,37,14
+    PUSHBUTTON      "Keyboard.Split1",IDC_KEY_SPLIT_1,7,123,37,14
+    PUSHBUTTON      "Keyboard.Split4",IDC_KEY_SPLIT_4,45,123,37,14
+    PUSHBUTTON      "Keyboard.Split8",IDC_KEY_SPLIT_8,83,123,37,14
+    PUSHBUTTON      "Keyboard.Split9",IDC_KEY_SPLIT_9,121,123,37,14
+    PUSHBUTTON      "Keyboard.Split16",IDC_KEY_SPLIT_16,159,123,37,14
+    PUSHBUTTON      "↑",IDC_KEY_UP,83,65,37,14
+    PUSHBUTTON      "↓",IDC_KEY_DOWN,83,87,37,14
+    PUSHBUTTON      "←",IDC_KEY_LEFT,45,75,37,14
+    PUSHBUTTON      "→",IDC_KEY_RIGHT,121,75,37,14
+    PUSHBUTTON      "Keyboard.Play",IDC_KEY_PLAY,7,141,22,14
+    PUSHBUTTON      "Keyboard.Stop",IDC_KEY_STOP,30,141,22,14
+    PUSHBUTTON      "Keyboard.Back",IDC_KEY_BACK,53,141,22,14
+    PUSHBUTTON      "Keyboard.Fast",IDC_KEY_FAST,76,141,22,14
+    PUSHBUTTON      "Keyboard.Slow",IDC_KEY_SLOW,99,141,22,14
+    PUSHBUTTON      "Keyboard.Next",IDC_KEY_NEXT,122,141,43,14
+    PUSHBUTTON      "Keyboard.Prev",IDC_KEY_PREV,166,141,43,14
+    PUSHBUTTON      "Keyboard.Search",IDC_KEY_SEARCH,7,159,37,14
+    PUSHBUTTON      "Keyboard.Record",IDC_KEY_RECORD,56,159,37,14
+    PUSHBUTTON      "Keyboard.Info",IDC_KEY_INFO,160,159,49,14
+    PUSHBUTTON      "Keyboard.Alarm",IDC_KEY_ALARM,105,159,37,14
+    PUSHBUTTON      "Keyboard.Backup",IDC_KEY_BACKUP,7,175,37,14
+    PUSHBUTTON      "Keyboard.Shutdown",IDC_KEY_SHUTDOWN,56,175,37,14
+    PUSHBUTTON      "Keyboard.PTZ",IDC_KEY_PTZ,83,225,37,14
+    PUSHBUTTON      "↑",IDC_KEY_PTZ_UP,83,243,37,14
+    PUSHBUTTON      "←",IDC_KEY_PTZ_LEFT,45,257,37,14
+    PUSHBUTTON      "→",IDC_KEY_PTZ_RIGHT,121,257,37,14
+    PUSHBUTTON      "↓",IDC_KEY_PTZ_DOWN,83,271,37,14
+    LTEXT           "Keyboard.Zoom",IDC_STATIC,166,184,19,8
+    LTEXT           "Keyboard.Iris",IDC_STATIC,165,196,19,8
+    LTEXT           "Keyboard.Focus",IDC_STATIC,166,210,19,8
+    PUSHBUTTON      "+",IDC_KEY_ZOOM_TELE,151,180,13,14
+    PUSHBUTTON      "-",IDC_KEY_ZOOM_WIDE,185,180,13,14
+    PUSHBUTTON      "+",IDC_KEY_IRIS_LARGE,151,194,13,14
+    PUSHBUTTON      "-",IDC_KEY_IRIS_SMALL,185,194,13,14
+    PUSHBUTTON      "+",IDC_KEY_FOCUS_FAR,151,208,13,14
+    PUSHBUTTON      "-",IDC_KEY_FOCUS_NEAR,185,208,13,14
+    PUSHBUTTON      "Keyboard.SPreset",IDC_KEY_SET_PRESET,7,192,43,14
+    PUSHBUTTON      "Keyboard.GPreset",IDC_KEY_GO_PRESET,54,192,43,14
+    PUSHBUTTON      "Keyboard.DPreset",IDC_KEY_DEL_PRESET,103,192,43,14
+    PUSHBUTTON      "Keyboard.Tour",IDC_KEY_AUTO_TOUR,7,208,43,14
+    PUSHBUTTON      "Keyboard.AutoPan",IDC_KEY_AUTO_PAN,54,208,43,14
+    PUSHBUTTON      "Keyboard.AutoScan",IDC_KEY_AUTO_SCAN,103,208,43,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Keyboard.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Keyboard.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_KEYBOARD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+//IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\DVRConnected.ico"
+IDI_ICON2               ICON                    "res\\DVRDisConnected.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Keyboard(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Keyboard.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

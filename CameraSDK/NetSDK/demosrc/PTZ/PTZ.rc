@@ -1,0 +1,292 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PTZ.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PTZ.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PTZ"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PTZ 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PTZ_DIALOG DIALOGEX 0, 0, 534, 477
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PtzControl.PtzControl"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,401,0,131,116
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,401,121,131,77
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,401,206,131,142
+    CONTROL         "",IDC_SEPERATOR,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    0,352,532,1
+    CONTROL         "",IDC_SCREEN_WINDOW,"Static",SS_WHITEFRAME,0,0,396,348
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,3,358,180,110
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,189,358,183,109
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,379,357,153,109
+    LTEXT           "Desktop.IPAddr",IDC_STATIC,407,12,41,8
+    LTEXT           "DeviceManage.PortNum",IDC_STATIC,407,33,41,8
+    LTEXT           "DeviceManage.UserName",IDC_STATIC,407,54,41,8
+    LTEXT           "DeviceManage.Password",IDC_STATIC,407,75,41,8
+    EDITTEXT        IDC_EDIT_Port,456,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UserName,456,51,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Password,456,72,40,14,ES_AUTOHSCROLL
+    CONTROL         "IPAddress1",IDC_DvrIPAddress,"SysIPAddress32",
+                    WS_TABSTOP,456,8,68,15
+    PUSHBUTTON      "LogType.LogIn",IDC_BT_Login,409,89,50,14
+    PUSHBUTTON      "LogType.LogOut",IDC_BT_Leave,473,89,50,14
+    LTEXT           "Version.Channel",IDC_STATIC,409,132,44,8
+    LTEXT           "Desktop.Window",IDC_STATIC,409,154,43,8
+    PUSHBUTTON      "PlayBack.Play",IDC_BUTTON_Play,411,174,50,14
+    PUSHBUTTON      "PlayBack.Stop",IDC_BUTTON_Stop,475,174,50,14
+    COMBOBOX        IDC_COMBO_Channel,456,128,48,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DispNum,456,153,48,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "PtzControl.LeftTop",IDC_PTZ_LEFTUP,418,214,27,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Up",IDC_PTZ_UP,452,214,27,14,BS_FLAT
+    PUSHBUTTON      "PtzControl.RightTop",IDC_PTZ_RIGHTUP,486,214,27,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Left",IDC_PTZ_LEFT,418,232,27,14,BS_FLAT
+    PUSHBUTTON      "PtzControl.LeftDown",IDC_PTZ_LEFTDOWN,418,252,27,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Down",IDC_PTZ_DOWN,452,252,27,14,BS_FLAT
+    PUSHBUTTON      "PtzControl.RightDown",IDC_PTZ_RIGHTDOWN,486,252,27,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Right",IDC_PTZ_RIGHT,486,232,27,14,BS_FLAT
+    PUSHBUTTON      "-",IDC_ZOOM_WIDE,414,285,27,14,BS_FLAT
+    PUSHBUTTON      "+",IDC_ZOOM_TELE,414,316,27,14,BS_FLAT
+    PUSHBUTTON      "-",IDC_FOCUS_NEAR,450,285,27,14,BS_FLAT
+    PUSHBUTTON      "+",IDC_FOCUS_FAR,450,316,27,14,BS_FLAT
+    PUSHBUTTON      "-",IDC_IRIS_CLOSE,489,285,27,14,BS_FLAT
+    PUSHBUTTON      "+",IDC_IRIS_OPEN,489,316,27,14,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,410,280,34,55
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,447,280,34,55
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,485,280,34,55
+    LTEXT           "Keyboard.Zoom",IDC_STATIC,415,304,23,8
+    LTEXT           "Keyboard.Focus",IDC_STATIC,453,304,22,8
+    LTEXT           "Keyboard.Iris",IDC_STATIC,491,304,22,8
+    LTEXT           "Keyboard.AutoPan",IDC_STATIC,388,430,65,8
+    PUSHBUTTON      "PtzControl.Start",IDC_ROTATE_START,388,446,48,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Stop",IDC_ROTATE_STOP,464,446,48,14,BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,381,421,150,1
+    LTEXT           "Desktop.Split",IDC_STATIC,388,386,29,8
+    COMBOBOX        IDC_COMBOWNDNUM,437,382,48,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Keyboard.Tour",IDC_STATIC,201,365,39,8
+    EDITTEXT        IDC_CRUISE_GROUP,253,363,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "PtzControl.Start",IDC_START_CRUISE,201,390,50,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Stop",IDC_CRUISE_STOP_TOUR,300,389,50,14,
+                    BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,4,411,178,1
+    LTEXT           "CruiseEdit.Preset",IDC_STATIC,201,415,40,8
+    EDITTEXT        IDC_CRUISE_Point,253,411,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "CruiseEdit.AddPreset",IDC_CRUISE_ADD_POINT,300,411,50,
+                    14,BS_FLAT
+    PUSHBUTTON      "CruiseEdit.DelPreset",IDC_CRUISE_DEL_POINT,204,437,50,
+                    14,BS_FLAT
+    PUSHBUTTON      "CruiseEdit.ClearTour",IDC_CRUISE_DEL_GROUP,300,437,50,
+                    14,BS_FLAT
+    LTEXT           "CruiseEdit.Preset",IDC_STATIC,7,372,36,8
+    EDITTEXT        IDC_PRESET_DATA,47,366,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Keyboard.GPreset",IDC_PRESET_SET,101,366,50,14,BS_FLAT
+    PUSHBUTTON      "Keyboard.SPreset",IDC_PRESET_ADD,13,391,50,14,BS_FLAT
+    PUSHBUTTON      "Keyboard.DPreset",IDC_PRESET_DELE,101,391,50,14,BS_FLAT
+    LTEXT           "Keyboard.AutoScan",IDC_STATIC,13,424,69,8
+    PUSHBUTTON      "Scan.LeftLimit",IDC_LINE_SET_LEFT,9,439,50,14,BS_FLAT
+    PUSHBUTTON      "Scan.RightLimit",IDC_LINE_SET_RIGHT,66,439,50,14,
+                    BS_FLAT
+    PUSHBUTTON      "PtzControl.Start",IDC_LINE_START,123,439,50,14,BS_FLAT
+    PUSHBUTTON      "Desktop.Snapshot",IDC_BUTTON_SnapShot,388,403,50,14,
+                    BS_FLAT
+    PUSHBUTTON      "PlayBack.LocalRecord",IDC_BUTTON_Record,462,402,50,14,
+                    BS_FLAT
+    LTEXT           "Desktop.Audio",IDC_STATIC,388,367,37,8
+    PUSHBUTTON      "PtzControl.AuxOpen",IDC_BUTTON_OpenAudio,437,361,50,14,
+                    BS_FLAT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PTZ Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PTZ\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PTZ.EXE\0"
+            VALUE "ProductName", "PTZ 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PTZ_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 532
+        BOTTOMMARGIN, 470
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PTZ(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PTZ.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
