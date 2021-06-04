@@ -1,0 +1,79 @@
+<launch>
+	  <!-- Arguments参数 -->
+  <arg name="car_mode"  default="senior_mec_no" doc="opt: mini_mec,senior_mec_no, senior_mec_bs,senior_mec_dl,top_mec_bs,top_mec_dl"/>
+
+    <!-- car_mode and params  mini_mec-->
+  <group if="$(eval car_mode == 'mini_mec')">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_mini_mec/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_mini_mec/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/base_global_planner_param.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/teb_local_planner_params.yaml" command="load" />
+  </node>
+  </group>
+
+    <!-- car_mode and params  senior_mec_no-->
+  <group if="$(eval car_mode == 'senior_mec_no')">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_senior_mec_no/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_senior_mec_no/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/base_global_planner_param.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/teb_local_planner_params.yaml" command="load" />
+  </node>
+  </group>
+
+    <!-- car_mode and params  senior_mec_no-->
+  <group if="$(eval car_mode == 'senior_mec_dl')">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_senior_mec_dl/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_senior_mec_dl/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/base_global_planner_param.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/teb_local_planner_params.yaml" command="load" />
+  </node>
+  </group>
+
+
+
+<!-- car_mode and params  top_mec_bs-->
+<group if="$(eval car_mode == 'top_mec_bs')">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_top_mec_bs/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_top_mec_bs/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/base_global_planner_param.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/teb_local_planner_params.yaml" command="load" />
+  </node>
+  </group>
+
+  <!-- car_mode and params  top_mec_dl-->
+<group if="$(eval car_mode == 'top_mec_dl')">
+ <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_top_mec_dl/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_top_mec_dl/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/move_base_params.yaml" command="load" />
+
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/base_global_planner_param.yaml" command="load" />
+    <rosparam file="$(find turn_on_wheeltec_robot)/param_common/teb_local_planner_params.yaml" command="load" />
+  </node>
+  </group>
+
+</launch>
+
+

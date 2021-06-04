@@ -1,0 +1,64 @@
+<launch>
+  <!-- Arguments参数 -->
+   <arg name="car_mode"  default="top_diff" doc="opt: mini_tank, mini_diff, mini_4wd, top_diff, four_wheel_diff_bs, four_wheel_diff_dl"/>
+  <!--坐标变换，需要实测 -->
+  <node pkg="tf" type="static_transform_publisher" name="base_to_link" args="0 0 0 0 0 0 base_footprint base_link 100" />
+  <node pkg="tf" type="static_transform_publisher" name="base_to_gyro" args="0 0 0 0 0 0 base_footprint gyro_link 100" />
+
+  <!-- car_mode and tf  mini_4wd-->
+  <group if="$(eval car_mode == 'mini_4wd')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.048 0.00 0.19 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0.14 0.00 0.25 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+  <!-- car_mode and tf  mini_tank-->
+  <group if="$(eval car_mode == 'mini_tank')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.02 0.00 0.155 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0.14 0.00 0.25 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+  <!-- car_mode and tf  mini_dff-->
+  <group if="$(eval car_mode == 'mini_diff')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.031 0.00 0.155 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0.12 0.00 0.25 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+  <!-- car_mode and tf  top_dff-->
+  <group if="$(eval car_mode == 'top_diff')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.087 0.00 0.195 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0.187 0.00 0.32 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+    <!-- car_mode and tf  four_wheel_diff_bs-->
+    <group if="$(eval car_mode == 'four_wheel_diff_bs')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.157 0.00 0.385 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0 0.00 0 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+    <!-- car_mode and tf  four_wheel_diff_dl-->
+    <group if="$(eval car_mode == 'four_wheel_diff_dl')">
+      <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.272 0.00 0.257 3.1415 0 0  base_footprint laser 100" />
+      <node pkg="tf" type="static_transform_publisher" name="base_to_camera" args="0 0.00 0 0 0 0   base_footprint camera_link 100" />
+  </group>
+
+   <!-- turn on lidar开启思岚雷达  -->
+   <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+      <!-- turn on base_serial 开启底层单片机的控制节点  -->
+   <include file="$(find turn_on_wheeltec_robot)/launch/include/base_serial.launch" />
+   <!-- turn on ekf 扩张卡尔曼滤波 -->
+   <include file="$(find turn_on_wheeltec_robot)/launch/include/robot_pose_ekf.launch" />
+   <!-- URDF 标准化机器人描述格式 -->
+  <param name = "robot_description" textfile = "$(find wheeltec_robot_urdf)/urdf/wheeltec_robot.urdf"/> 
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <!-- 机器人控制平滑包，该官方包不支持全向机器人 -->
+   <include file="$(find turn_on_wheeltec_robot)/launch/include/velocity_smoother.launch" />
+
+ </launch>
+
+
+
+
+
+
+

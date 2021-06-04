@@ -1,0 +1,95 @@
+TebLocalPlannerROS:
+
+ odom_topic: /odom_combined
+ #odom_topic: /robot_pose_ekf/odom_combined
+ #map_frame: /odom
+ map_frame: /odom_combined
+
+ # Trajectory
+
+ teb_autosize: True #优化期间允许改变轨迹的时域长度
+ dt_ref: 0.45 #局部路径规划的解析度# minimum 0.01
+ dt_hysteresis: 0.1 #允许改变的时域解析度的浮动范围， 一般为 dt_ref 的 10% 左右 minimum0.002
+ global_plan_overwrite_orientation: True #覆盖全局路径中局部路径点的朝向
+ max_global_plan_lookahead_dist: 3.0 #考虑优化的全局计划子集的最大长度
+ feasibility_check_no_poses: 5 #检测位姿可到达的时间间隔 minimum 0
+
+ # Robot
+ max_vel_x: 0.3 #最大x前向速度
+ max_vel_y: 0.3 #最大y前向速度
+# max_vel_x: 0.7
+ max_vel_x_backwards: 0.35 #Maximum translational velocity of the robot for driving backwards
+ max_vel_theta: 1.0  #最大转向角速度
+# max_vel_theta: 1.5
+ acc_lim_x: 0.15  #最大x向加速度
+ acc_lim_y: 0.15  #最大y向加速度
+ acc_lim_theta: 0.20  #最大角加速度
+ min_turning_radius: 0.0  #车类机器人的最小转弯半径
+ footprint_model: #用于优化的足迹模型(与通用配置文件中的footprint不通用)，该模型对于距离计算的复杂性和计算时间至关重要。与后面的参数min_obstacle_dist一起使用。
+  type: "polygon" #多边形类型，默认”point”。
+  #vertices: [[-0.133, -0.125], [-0.133, 0.125],[0.133,0.125],[0.133, -0.125]]  #多边形端点坐标 for mini_mec
+  vertices: [[-0.195, -0.21], [-0.195, 0.21],[0.195,0.21],[0.195, -0.21]]  #多边形端点坐标 for senior_mec_no
+  #vertices: [[-0.29, -0.27], [-0.29, 0.27],[0.29,0.27],[0.29, -0.27]]  #多边形端点坐标 for senior_mec_dl
+  #vertices: [[-0.380, -0.330], [-0.380, 0.330],[0.380,0.208],[0.380, -0.330]]  #多边形端点坐标 for top_mec_bs
+  #vertices: [[-0.280, -0.313], [-0.280, 0.313],[0.280,0.313],[0.280, -0.313]]  #多边形端点坐标 for top_mec_dl
+  #外形尺寸，type为形状类型，vertices为形状尺寸，不同的类型对应不同尺寸格式(注意缩进)。
+  #type有"point", "circular", "two_circles", "line", "polygon"等类型，不同类型有不同的尺寸格式，如”line”类型对应格式”line_start”、”line_end”。
+  #line_start: [0.00, 0.0] # for type "line" senior_akm
+  #line_end: [0.7, 0.0] # for type "line" top_akm_bs
+  #radius: 0.3 # for type "circular"
+  #front_offset: 0.2       #for type "two_circles"
+  #front_rasius: 0.2       #for type "two_circles"
+  #rear_offset : 0.2       #for type "two_circles"
+  #rear_rasius : 0.2       #for type "two_circles"
+  #可参见官方说明：http://wiki.ros.org/teb_local_planner/Tutorials/Obstacle%20Avoidance%20and%20Robot%20Footprint%20Model
+
+ # GoalTolerance
+
+ xy_goal_tolerance: 0.15   #目标 xy 偏移容忍度  minimum 0.001 maximum 0.2
+ yaw_goal_tolerance: 0.1 #目标 角度 偏移容忍度 minimum 0.001 maximum 0.1
+ free_goal_vel: False  #允许机器人以最大速度驶向目的地
+
+ # Obstacles
+
+ min_obstacle_dist: 0.30 #和障碍物最小距离
+ include_costmap_obstacles: True  #是否将动态障碍物预测为速度模型，
+ costmap_obstacles_behind_robot_dist: 1.0  #限制机器人后方规划时考虑的局部成本地图障碍物
+ obstacle_poses_affected: 7   #障碍物姿态受影响0~30
+ costmap_converter_plugin: ""
+ costmap_converter_spin_thread: True
+ costmap_converter_rate: 5
+
+ # Optimization
+
+ no_inner_iterations: 5  #被外循环调用后内循环执行优化次数
+ no_outer_iterations: 4  #执行的外循环的优化次数
+ optimization_activate: True  #激活优化，
+ optimization_verbose: False #打印优化过程详情
+ penalty_epsilon: 0.1 #对于硬约束近似，在惩罚函数中添加安全范围
+ weight_max_vel_x: 1 #最大x速度权重0~2
+ weight_max_vel_y: 1 #最大y速度权重0~2
+ weight_max_vel_theta: 1  #最大w速度权重0~1
+ weight_acc_lim_x: 1  #最大x 加速度权重0~1
+ weight_acc_lim_y: 1  #最大y 加速度权重0~1
+ weight_acc_lim_theta: 1 #最大w 加速度权重 0~1
+ weight_kinematics_nh: 1 #满足非完整运动学的最优权重
+ weight_kinematics_forward_drive: 1   #优化过程中，迫使机器人只选择前进方向，差速轮适用
+ weight_kinematics_turning_radius: 1 #优化过程中，车型机器人的最小转弯半径的权重
+ weight_optimaltime: 1  #优化过程中，基于轨迹的时间上的权重，
+ weight_obstacle: 50  #优化过程中，和障碍物最小距离的权重，0~50
+ weight_dynamic_obstacle: 10 # not in use yet  优化过程中，和动态障碍物最小距离的权重 0~50
+ selection_alternative_time_cost: False # not in use yet
+
+ # Homotopy Class Planner
+
+ enable_homotopy_class_planning: False
+ enable_multithreading: True  #允许多线程并行处理
+ simple_exploration: False
+ max_number_classes: 4 #允许的线程数
+ roadmap_graph_no_samples: 15  #指定为创建路线图而生成的样本数
+ roadmap_graph_area_width: 5  #指定在开始和目标之间生成采样的区域的宽度[m]
+ h_signature_prescaler: 0.5  #标度障碍物的数量
+ h_signature_threshold: 0.1
+ obstacle_keypoint_offset: 0.1
+ obstacle_heading_threshold: 0.45  #障碍物前进阈值
+ visualize_hc_graph: False #可视化为探索新同伦类而创建的图
