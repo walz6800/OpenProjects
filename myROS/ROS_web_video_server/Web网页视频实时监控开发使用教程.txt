@@ -1,0 +1,25 @@
+【使用前】（默认已经提前安装后好OpenCV以及usb_cam功能包）
+
+1.复制web_video_server功能包到工作空间src文件夹下
+
+2.运行sudo apt-get install ros-melodic-async-web-server-cpp
+
+（jetson nano需要执行，树莓派忽略此步）
+3.将提供的cv_bridgeConfig.cmake文件复制到/opt/ros/melodic/share/cv_bridge/cmake文件夹下，替换调同名文件，需要用sudo cp命令复制
+
+
+【使用方法】
+1.打开终端，运行：
+roslaunch usb_cam usb_cam-test.launch
+
+2.打开终端，运行：
+rosrun web_video_server web_video_server
+
+3.本机web浏览器摄像头图像信息
+http://localhost:8080/
+
+4.其他终端设备web浏览器摄像头图像信息——需要在同一个局域网下
+http://192.168.0.100:8080
+（192.168.0.100为ROS主控的IP地址）
+
+【注】建议使用谷歌浏览器，经测试360极速浏览器、IE浏览器无法打开图像
